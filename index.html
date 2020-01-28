@@ -1,36 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>HOME | All about Cakes</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles/index.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lily Script One"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="site_container">
-      <header>
-        <h1>
-          <a href="index.html" target="_blank">All about Cakes</a>
-        </h1>
-        <nav class="navbar_container">
-          <ul class="navlist">
-            <li class="navbutton">
-              <a href="index.html"
-                ><div><p>HOME</p></div></a
-              >
-            </li>
-            <li class="navbutton">
-              <a href="about.html"
-                ><div><p>ABOUT</p></div></a
-              >
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <posts>
-        <div id="post1">
-          <article>
+      <div class="header">
+        <div class="header_nav">
+          <nav class="navbar_container">
+            <ul class="navlist">
+              <li class="navbutton">
+                <a href="index.html"
+                  ><div><p class="nav_p">HOME</p></div></a
+                >
+              </li>
+              <li class="navbutton">
+                <a href="about.html"
+                  ><div><p class="nav_p">ABOUT</p></div></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header_title">
+          <h1>
+            <a href="index.html" target="_blank" class="header_a"
+              >All about Cakes</a
+            >
+          </h1>
+        </div>
+      </div>
+      <div class="posts_container">
+        <div id="post">
+          <article id="post1">
             <div id="postimg1">
-              <a href="post1.html" class="post1"
-                ><div class="postimg1"></div
-              ></a>
+              <img class="postimg1" />
             </div>
             <div class="content1">
               <div class="post_header">
@@ -46,7 +57,9 @@
               </div>
               <div class="post_body">
                 <div class="post_title">
-                  <h2>Cake by Hagrid</h2>
+                  <a href="post-page.html"
+                    ><h2>Birthday Cake for Harry Potter</h2></a
+                  >
                 </div>
                 <div class="post_description">
                   <p>
@@ -62,77 +75,183 @@
                   <div class="view_count">
                     <p>1 view</p>
                   </div>
-                  <div class="comment"><a>Write a Comment</a></div>
+                  <div class="comment"><a href="#">Write a Comment</a></div>
                 </div>
               </div>
             </div>
           </article>
         </div>
-        <div id="post2">
-          <div class="postimg2"></div>
-          <div class="content2"></div>
+        <div id="post">
+          <article id="post2">
+            <div id="postimg2">
+              <img class="postimg2" />
+            </div>
+            <div class="content1">
+              <div class="post_header">
+                <div class="userimg"></div>
+                <div class="user">
+                  <div class="username">
+                    <h5>jamiekim828</h5>
+                  </div>
+                  <div class="timeago">
+                    <h6>38 minutes ago</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="post_body">
+                <div class="post_title">
+                  <a href="post-page.html"><h2>Life happens now</h2></a>
+                </div>
+                <div class="post_description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores quos eaque fuga culpa laudantium architecto, soluta
+                    asperiores aut ipsum, officiis sed doloribus laboriosam,
+                    blanditiis eligendi. Quidem quo unde architecto consequatur?
+                  </p>
+                </div>
+              </div>
+              <div class="post_footer">
+                <div class="postview">
+                  <div class="view_count">
+                    <p>1 view</p>
+                  </div>
+                  <div class="comment"><a href="#">Write a Comment</a></div>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
-        <div id="post3">
-          <div class="postimg3"></div>
-          <div class="content3"></div>
+        <div id="post">
+          <article id="post3">
+            <div id="postimg3">
+              <img class="postimg3" />
+            </div>
+            <div class="content1">
+              <div class="post_header">
+                <div class="userimg"></div>
+                <div class="user">
+                  <div class="username">
+                    <h5>jamiekim828</h5>
+                  </div>
+                  <div class="timeago">
+                    <h6>38 minutes ago</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="post_body">
+                <div class="post_title">
+                  <a href="post-page.html"
+                    ><h2>Cake for someone you love the most</h2></a
+                  >
+                </div>
+                <div class="post_description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores quos eaque fuga culpa laudantium architecto, soluta
+                    asperiores aut ipsum, officiis sed doloribus laboriosam,
+                    blanditiis eligendi. Quidem quo unde architecto consequatur?
+                  </p>
+                </div>
+              </div>
+              <div class="post_footer">
+                <div class="postview">
+                  <div class="view_count">
+                    <p>1 view</p>
+                  </div>
+                  <div class="comment"><a href="#">Write a Comment</a></div>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
-        <div id="old_new">
-          <nav class="old_new"></nav>
+
+        <div id="pagination">
+          <ul class="pagination">
+            <li class="previous">
+              <a href="#" class="angle-left"></a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li class="next">
+              <a href="#" class="angle-right"></a>
+            </li>
+          </ul>
         </div>
-      </posts>
+      </div>
       <footer>
-        <div id="social">
-          <div class="Social_title"><h6>Follow Me</h6></div>
-          <div id="social_bar">
-            <ul class="social_bar">
-              <li>
-                <a target="_blank" href="http://www.instagram.com/jamie_cakerij"
-                  ><img class="social_media" src="images/instagram-xxl.png"
-                /></a>
-              </li>
-              <li>
-                <a
-                  a
-                  target="_blank"
-                  href="http://www.linkedin.com/in/jamiekim828"
-                  ><img class="social_media" src="images/linkedin-xxl.png"
-                /></a>
-              </li>
-              <li>
-                <a target="_blank" href="http://www.github.com/jamiekim828"
-                  ><img class="social_media" src="images/github-xxl.png"
-                /></a>
-              </li>
-            </ul>
+        <div class="footer_container">
+          <div id="social_container">
+            <div id="social">
+              <div class="Social_title"><h6>Follow Me</h6></div>
+              <div id="social_bar">
+                <ul class="social_bar">
+                  <li id="social_list">
+                    <a
+                      target="_blank"
+                      href="http://www.instagram.com/jamie_cakerij"
+                      ><img class="social_media" src="images/instagram-xxl.png"
+                    /></a>
+                  </li>
+                  <li id="social_list">
+                    <a
+                      a
+                      target="_blank"
+                      href="http://www.linkedin.com/in/jamiekim828"
+                      ><img class="social_media" src="images/linkedin-xxl.png"
+                    /></a>
+                  </li>
+                  <li id="social_list">
+                    <a target="_blank" href="http://www.github.com/jamiekim828"
+                      ><img class="social_media" src="images/github-xxl.png"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="subscribe_form">
+                <input
+                  type="email"
+                  value="Enter your email..."
+                  class="email"
+                  placeholder="Enter your email"
+                  required
+                />
+                <input
+                  type="submit"
+                  value="Subscribe"
+                  name="subscribe"
+                  class="button"
+                />
+              </div>
+              <div class="copyright"><p>@2020 by Sooyoung Kim</p></div>
+            </div>
           </div>
-          <div class="subscribe_form">
-            <input
-              type="email"
-              value="EMAIL"
-              class="email"
-              placeholder="Enter your email"
-              required
-            />
-            <input
-              type="submit"
-              value="Subscribe"
-              name="subscribe"
-              class="button"
-            />
-          </div>
-          <div class="copyright"><p>@2020 by Sooyoung Kim</p></div>
-        </div>
-        <div id="info">
-          <div class="info_container">
-            <div class="info_img"></div>
-          </div>
-          <div class="info_content">
-            <div class="info_name"><h5>Jamie</h5></div>
-            <div class="info_description">
-              <h6>
-                "Loves baking, cooking and anything shiny and sparkly. Enjoys
-                challenging and learning new things!
-              </h6>
+          <div id="card">
+            <div class="card">
+              <div class="cardimg">
+                <img
+                  src="images/sy.png"
+                  class="card_img"
+                  alt="My_Photo"
+                  style="width:100%"
+                />
+              </div>
+              <div id="card_container">
+                <div class="card_container">
+                  <h4><b>Jamie</b></h4>
+                  <p>
+                    Loves baking, cooking and anything shiny and sparkly. Enjoys
+                    challenging and learning new things!<br /><q
+                      >Que Sera Sera!</q
+                    ><br />
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Enim repellendus sequi blanditiis et voluptate! In similique
+                    molestiae, quam quasi asperiores tempore itaque perspiciatis
+                    nesciunt, nam deleniti sint error voluptatibus sequi?
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
