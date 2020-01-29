@@ -13,7 +13,35 @@ body {
 #postsite_container {
   display: grid;
   grid-gap: 1em;
-  grid-template-rows: 1fr auto 1fr 1fr;
+  grid-template-rows: 1fr 3fr min-content min-content;
+  align-items: center;
+}
+
+.postpage_user {
+  flex: 1;
+}
+
+.usernote {
+  display: flex;
+  align-items: baseline;
+}
+
+.username h5 {
+  font-family: cursive;
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(3, 3, 3);
+  padding: 40px 40px;
+}
+
+.timeago h6 {
+  font-family: cursive;
+  font-size: 15px;
+  color: rgb(3, 3, 3);
+}
+.postpage_body {
+  flex: 7;
+  justify-content: center;
 }
 
 #blog {
@@ -35,9 +63,9 @@ body {
 #post_holder {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 
 /* #recent_post {
@@ -53,15 +81,30 @@ body {
 }
 
 .postpage_body {
-  margin: 10 50;
-  justify-content: center;
+  justify-content: stretch;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(5, 5, 5);
   padding: 50px;
 }
 
+.body_flex {
+  display: grid;
+  grid-template-rows: repeat(1fr 1fr min-content) wrap;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.postpage_description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
 .postpage_body #postpageimg {
   background-image: url('../images/Harry7534.jpg');
+  align-self: stretch;
+  background-size: cover;
+  justify-content: center;
+  height: 45vw;
 }
 
 /* #recent_post {
@@ -78,12 +121,13 @@ body {
   display: flex;
   justify-content: stretch;
   align-items: stretch;
-  justify-content: space-around;
+  justify-content: space-between;
+  height: 45vh;
+  padding-top: 100px;
 }
 
 #recent_post > div {
-  width: 330px;
-
+  width: 40vh;
   border: 1px #fff solid;
   justify-content: stretch;
   align-items: center;
@@ -187,6 +231,12 @@ body {
 }
 
 .comment_button {
+  padding-top: 50px;
   justify-content: center;
   justify-self: center;
+}
+
+.comment_button > button {
+  padding: 30px;
+  border-radius: 10px;
 }

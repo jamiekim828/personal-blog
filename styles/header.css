@@ -3,12 +3,13 @@
   flex-direction: column-reverse;
   align-items: center;
 
-  /* grid-template-columns: 100%; */
+  grid-template-columns: 100%;
 }
 
 .header_title {
   justify-content: center;
 }
+
 h1 {
   justify-self: center;
   font-family: 'Lily Script One';
