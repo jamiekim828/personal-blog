@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lily+Script+One&display=swap');
 @import 'header.css';
-@import 'post.css';
+@import 'post-page.css';
 @import 'footer.css';
 
 body {
@@ -212,10 +212,11 @@ article {
 }
 
 .subscribe_form {
-  width: 135px;
+  width: 150px;
   clear: both;
   margin-top: 50px;
   margin-bottom: 100px;
+  justify-items: center;
 }
 
 .subscribe_form input {

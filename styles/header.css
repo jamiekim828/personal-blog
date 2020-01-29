@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  flex-direction: column-reverse;
+  /* grid-template-columns: 100%; */
+}
+
+h1 {
+  text-align: center;
+  align-items: center;
+  font-family: 'Lily Script One';
+  font-size: 67px;
+  font-weight: normal;
+  width: 600px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header_a {
+  text-decoration: none;
+  color: #c2fab7;
+}
+
+.header_nav {
+  width: 980px;
+  height: 30px;
+  overflow-x: visible;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.navlist {
+  width: calc(100% - 0px);
+  height: calc(100% - 0px);
+  white-space: nowrap;
+  display: inline-block;
+  overflow: visible;
+  position: absolute;
+  text-align: right;
+}
+
+.navbutton {
+  list-style: none;
+  width: 69px;
+  height: 30px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: visible;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav_p {
+  text-align: center;
+  line-height: 30px;
+  color: #e9ebea;
+  font-weight: bold;
+  display: flex;
+  padding: 0 10px;
+}
