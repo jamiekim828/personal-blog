@@ -24,6 +24,8 @@ article {
   grid-template-rows: 1fr 1fr;
   justify-content: center;
   align-items: center;
+  margin-right: 0;
+  margin-left: 0;
   /* max-height: 400px; */
 }
 
@@ -43,7 +45,7 @@ article {
 #post {
   border: 1px #fff solid;
   padding: 10px;
-
+  margin: 30px 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -71,6 +73,24 @@ article {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+  }
+
+  #postimg1 {
+    background: url('../images/Harry7534.jpg') no-repeat center center;
+    background-size: cover;
+    align-self: stretch;
+  }
+
+  #postimg2 {
+    background: url('../images/Life6937.jpg') no-repeat center center;
+    background-size: cover;
+    align-self: stretch;
+  }
+
+  #postimg3 {
+    background: url('../images/No5069.jpg');
+    background-size: cover;
+    align-self: stretch;
   }
 }
 
@@ -101,6 +121,24 @@ article {
     padding: 10px;
     margin: 30px 200px;
     font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #postimg1 {
+    background: url('../images/Harry7534.jpg') no-repeat center center;
+    background-size: cover;
+    align-self: stretch;
+  }
+
+  #postimg2 {
+    background: url('../images/Life6937.jpg') no-repeat center center;
+    background-size: cover;
+    align-self: stretch;
+  }
+
+  #postimg3 {
+    background: url('../images/No5069.jpg');
+    background-size: cover;
+    align-self: stretch;
   }
 }
 
@@ -134,18 +172,21 @@ article {
 #postimg1 {
   background: url('../images/Harry7534.jpg') no-repeat center center;
   background-size: cover;
+  width: 450px;
   align-self: stretch;
 }
 
 #postimg2 {
   background: url('../images/Life6937.jpg') no-repeat center center;
   background-size: cover;
+  width: 450px;
   align-self: stretch;
 }
 
 #postimg3 {
   background: url('../images/No5069.jpg');
   background-size: cover;
+  width: 450px;
   align-self: stretch;
 }
 
