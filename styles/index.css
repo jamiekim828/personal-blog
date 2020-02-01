@@ -103,6 +103,12 @@ article {
     background-size: cover;
     align-self: stretch;
   }
+
+  .card {
+    width: 870px;
+    height: auto;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 901px) {
