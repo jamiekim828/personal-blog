@@ -13,17 +13,24 @@ body {
 #postsite_container {
   display: grid;
   grid-gap: 1em;
-  grid-template-rows: 250px auto 1fr 1fr;
+  grid-template-rows: 250px max-content 250px 600px;
   justify-items: center;
 }
 
 .postpage_user {
   flex: 1;
+  padding-bottom: 0;
 }
 
 .usernote {
   display: flex;
+
   align-items: baseline;
+}
+
+#avatar .avatar {
+  width: 30px;
+  height: 30px;
 }
 
 .username h5 {
@@ -40,7 +47,7 @@ body {
   color: rgb(3, 3, 3);
 }
 .postpage_body {
-  flex: 7;
+  flex: 5;
   justify-content: center;
 }
 
@@ -116,6 +123,7 @@ body {
 
 #recent_post > div {
   max-width: 100%;
+  height: auto;
   border: 1px #fff solid;
   justify-content: center;
   align-items: center;
@@ -191,38 +199,11 @@ body {
   padding: 15px;
 }
 
-.recent_post1 #rp_img1 {
-  background-image: url('../images/Life6937.jpg');
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  justify-content: stretch;
-}
-
-.recent_post2 #rp_img2 {
-  background-image: url('../images/No5069.jpg');
-  background-size: cover;
-
-  height: auto;
-  justify-content: stretch;
-  align-self: stretch;
-}
-
-.recent_post3 #rp_img3 {
-  background-image: url('../images/purple6679.jpg');
-  background-size: cover;
-
-  height: auto;
-  justify-content: stretch;
-  align-self: stretch;
-}
-
 .comment_button {
   padding-top: 50px;
   justify-content: center;
   justify-self: center;
 }
-
 .comment_button > button {
   padding: 30px;
   border-radius: 10px;
@@ -287,6 +268,10 @@ body {
     justify-content: center;
     height: 65vw;
   }
+  .footer_container #card .card {
+    width: 600px;
+    height: auto;
+  }
 }
 
 @media (min-width: 901px) {
@@ -300,8 +285,6 @@ body {
     justify-content: center;
   }
 
-  #post_holder > div {
-  }
   #recent_post {
     display: flex;
     justify-content: stretch;
@@ -351,4 +334,55 @@ body {
 }
 .share_t {
   width: 30px;
+}
+
+.recent_post1 #rp_img1 {
+  background-image: url('../images/Life6937.jpg');
+  background-size: cover;
+  justify-content: stretch;
+  align-self: stretch;
+}
+
+.recent_post2 #rp_img2 {
+  background-image: url('../images/No5069.jpg');
+  background-size: cover;
+  justify-content: stretch;
+  align-self: stretch;
+}
+
+.recent_post3 #rp_img3 {
+  background-image: url('../images/purple6679.jpg');
+  background-size: cover;
+  justify-content: stretch;
+  align-self: stretch;
+}
+
+@media only screen and (max-width: 600px) {
+  #recent_post > div {
+    width: 320px;
+    height: 330px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .recent_post1 #rp_img1 {
+    background-image: url('../images/Life6937.jpg');
+    background-size: cover;
+    width: 320px;
+    align-self: stretch;
+  }
+
+  .recent_post2 #rp_img2 {
+    background-image: url('../images/No5069.jpg');
+    background-size: cover;
+    width: 320px;
+    align-self: stretch;
+  }
+
+  .recent_post3 #rp_img3 {
+    background-image: url('../images/purple6679.jpg');
+    background-size: cover;
+    width: 320px;
+    align-self: stretch;
+  }
 }
