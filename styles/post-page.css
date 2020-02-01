@@ -331,18 +331,24 @@ body {
   height: 40;
 }
 .share {
-  display: inline-block;
-}
-#share .share > li {
-  list-style: none;
+  display: flex;
+  align-items: flex-end;
 }
 
+#share .share > li {
+  list-style: none;
+  padding: 10px;
+}
+#share .share > li > span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
 .share_f {
-  width: 20px;
+  width: 30px;
 }
 .share_g {
-  width: 20px;
+  width: 30px;
 }
 .share_t {
-  width: 20px;
+  width: 30px;
 }
